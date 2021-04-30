@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+
+div {
+  margin: 5px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header div {
+  background-color: orange;
+  height: 50px;
+}
+
+.submain {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.main .div3 {
+  background-color: rgb(196, 233, 62);
+  height: 200px;
+}
+
+.main .submain div{
+  background-color: rgb(12, 75, 170);
+  height: 200px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer div {
+  background-color: rgb(180, 179, 179);
+  height: 100px;
+}
+
+@media screen and (min-width: 760px) and (max-width: 1023px){
+  .main .submain div {
+    height: 60px;
+  }
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer div{
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .header div {
+    width: 49%;
+    height: 80px;
+  }
+  .main .div3 {
+    height: 300px;
+  }
+  .main .submain{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main .submain div {
+    width: 32%;
+  }
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer div{
+    width: 24%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  
+}
